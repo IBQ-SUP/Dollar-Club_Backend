@@ -28,7 +28,7 @@ if config.config_file_name is not None:
 
 
 def get_url() -> str:
-    return os.getenv("SYNC_DATABASE_URL", "postgresql+psycopg://postgres:kagakunin@localhost:5432/Tradinghub")
+    return os.getenv("SYNC_DATABASE_URL", "postgresql+psycopg://postgres:kagakunin@localhost:5432/dollarclub")
 
 
 def run_migrations_offline():                  
@@ -64,4 +64,5 @@ if context.is_offline_mode():
     run_migrations_offline()
 else:
     run_migrations_online()
+
 
